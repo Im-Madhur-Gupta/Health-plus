@@ -16,7 +16,7 @@ function App() {
       <Router>
         <Navbar />
         <Route exact path="/"><Home /></Route>
-        <Route exact path="/nearestHospital"><Map /></Route>
+        <Route exact path="/nearesthospital"><Map /></Route>
         <Route exact path="/sos"><Sos /></Route>
         <Route exact path="/login"><Signin /></Route>
         <Route exact path="/register"><Signup /></Route>
