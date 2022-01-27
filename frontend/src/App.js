@@ -14,13 +14,14 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar />
         <Route exact path="/"><Home /></Route>
         <Route exact path="/nearestHospital"><Map /></Route>
         <Route exact path="/sos"><Sos /></Route>
-        <Route exact path="/login"><Navbar /><Signin /></Route>
-        <Route exact path="/register"><Navbar /><Signup /></Route>
+        <Route exact path="/login"><Signin /></Route>
+        <Route exact path="/register"><Signup /></Route>
         <Route exact path="/covid"><Covid /></Route>
-        <Route exact path="/reportcase"><Navbar /><ReportCase /></Route>
+        <Route exact path="/reportcase"><ReportCase /></Route>
       </Router>
     </div>
   );

@@ -8,8 +8,7 @@ import MapboxDirections from "@mapbox/mapbox-gl-directions/dist/mapbox-gl-direct
 import "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css";
 import Navbar from "../Navbar/Navbar";
 
-mapboxgl.accessToken =
-  "pk.eyJ1Ijoia2FsYXNoMDQiLCJhIjoiY2t0Zmw0c2QzMDJ1ZTJxcGFsYWYyZWUybyJ9.cfa49VGoH3OghB0LM4piew";
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
 class Map extends React.Component {
   componentDidMount() {
@@ -32,7 +31,6 @@ class Map extends React.Component {
   render() {
     return (
       <React.Fragment>
-      <Navbar />
       <div
         ref={(element) => (this.mapWrapper = element)}
         className="map-wrapper"
